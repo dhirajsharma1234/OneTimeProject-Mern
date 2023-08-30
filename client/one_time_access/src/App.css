@@ -1,0 +1,260 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+
+body{
+  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+}
+
+header {
+  background-color: #5aaeb4;
+  height: 6.3rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+header h1,p {
+  margin: 2rem;
+}
+
+header h1 {
+  margin-left: 5rem;
+}
+
+.content {
+    text-align: left;
+    margin-left: 3rem;
+    width: 40rem;
+}
+
+.content .main-para{
+  font-size: 24px;
+}
+
+.content .main-para-content {
+    font-size: 14px;
+   
+}
+
+.main-para {
+  font-size: 2rem;
+}
+
+.form-content {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.form-content textarea {
+  border: 1px solid black;
+}
+
+.form-content .privacy-policy {
+  color: green;
+  margin-left: 200px;
+}
+
+.form-btn {
+  display: block; /* Change the display to block */
+  padding: 0.7rem;
+  background-color: #5aaeb4;
+  width: 38rem;
+  font-size: 1rem;
+  transform: translateX(43%);
+  cursor: pointer;
+  border: none;
+  border-radius: 0.5rem;
+  color: #fff;
+
+}
+
+.form-btn :hover {
+
+}
+
+.footer{
+  background-color: #5aaeb4;
+  margin-top: 47vh;
+}
+
+.footer ul {
+  margin-top: 0;
+  padding: 0;
+  font-size: 18px;
+  line-height: 1.6;
+  margin-bottom: 0;
+  text-align: center;
+}
+
+.footer ul li .link-style {
+  text-decoration: none;
+  color: inherit;
+  opacity: 0.5;
+}
+
+.footer ul li .link-style:hover {
+  opacity:1.5
+}
+
+.footer ul li {
+  display: inline-block;
+  padding: 0 15px;
+}
+
+.footer .copyright {
+  text-align: center;
+  margin-top: 0.5rem;
+  font-size: 12px;
+}
+
+.url-wrapped {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.url-wrapped .url-btn button{
+  margin:1rem;
+  cursor: pointer;
+}
+
+.url-wrapped .url-btn .copy-content{
+  width: 5.5rem;
+  padding: 0.5rem;
+  font-size: 1rem;
+  background-color: rgb(241, 181, 70);
+  border: none;
+  border-radius: 0.3rem;
+}
+
+.url-wrapped .url-btn .copy-content:hover{
+    background-color: #5aaeb4;
+}
+
+.url-wrapped .url-btn .generate-link{
+  width: 15rem;
+  padding: 0.5rem;
+  font-size: 1rem;
+  background-color: rgb(175, 175, 175);
+  border: none;
+  border-radius: 0.3rem;
+}
+
+.url-wrapped .url-btn .generate-link{
+  background-color: #5aaeb4;
+}
+
+.loader {
+  width: 48px;
+  height: 48px;
+  display: inline-block;
+  position: relative;
+  border: 3px solid;
+  border-color:#de3500 #0000 #fff #0000;
+  border-radius: 50%;
+  box-sizing: border-box;
+  animation: 1s rotate linear infinite;
+}
+.loader:before , .loader:after{
+  content: '';
+  top: 0;
+  left: 0;
+  position: absolute;
+  border: 10px solid transparent;
+  border-bottom-color:#fff;
+  transform: translate(-10px, 19px) rotate(-35deg);
+}
+.loader:after {
+  border-color: #de3500 #0000 #0000 #0000 ;
+  transform: translate(32px, 3px) rotate(-35deg);
+}
+ @keyframes rotate {
+  100%{    transform: rotate(360deg)}
+}
+
+.loader-container{
+  text-align: center;
+}
+
+.message-container {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* text-align: center; */
+}
+
+.message-contain {
+  text-align: center;
+  background-color: rgb(210, 209, 209);
+  width: 55rem;
+  height: 17rem;
+  border-radius: 2rem;
+}
+
+.message-contain .message-heading {
+    margin-top: 2.5rem;
+    margin-left: 2.5rem;
+    text-align: left;
+}
+
+.message-btn {
+  cursor: pointer;
+  width: 7rem;
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+  background-color: rgb(61, 205, 61);
+  border: none;
+  color: #fff;
+}
+
+.content-data {
+  margin-left: 3rem;
+}
+
+.content-data h3 {
+  margin-top: 2.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.content-copy-btn {
+  margin-top: 1rem;
+  margin-left: 29%;
+  font-size: 1rem;
+  padding: 0.4rem;
+  background-color: rgb(149, 149, 249);
+  border-radius: 0.3rem;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+}
+
+.content-dt {
+  width: 200px;
+  height: 100px;
+  transition: transform 0.3s ease-in-out; 
+}
+
+.content-dt ul li {
+  margin: 0.5rem;
+}
+
+.content-dt p{
+  text-align: left;
+  font-size: 1.5rem;
+}
+
+.content-dt  {
+  transform: translateX(550%); 
+}
+
+/* .content-dt {
+  transform: translateX(100px); 
+} */

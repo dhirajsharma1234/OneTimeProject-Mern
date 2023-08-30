@@ -6,7 +6,7 @@ import {router} from "./router/route.js";
 import connectDB from "./db/conn.js";
 const app = express();
 
-const PORT = process.env.PORT || 8000;
+const PORT = process.env.PORT || 8001;
 
 // Configure CORS to allow requests from a specific domain (replace with your frontend domain)
 const corsOptions = {

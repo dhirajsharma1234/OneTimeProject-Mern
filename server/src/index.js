@@ -1,4 +1,6 @@
-import "dotenv/config"
+// import "dotenv/config";
+import dotenv from "dotenv";
+dotenv.config();
 import express from "express";
 import morgan from "morgan";
 import {router} from "./router/route.js";

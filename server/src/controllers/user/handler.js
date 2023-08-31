@@ -1,7 +1,7 @@
-import crypto from "crypto";
+const crypto = require("crypto");
 //collection
-import { DataModel } from "../../model/oneTime.js";
-import { requestId } from "../../util/requestId.js";
+const { DataModel } = require("../../model/oneTime.js");
+const { requestId } = require("../../util/requestId.js");
 
 class OneTime {
     createData = async(req,res) =>{
@@ -72,4 +72,4 @@ class OneTime {
 }
 
 const oneTime = new OneTime();
-export { oneTime };
+module.exports = { oneTime };

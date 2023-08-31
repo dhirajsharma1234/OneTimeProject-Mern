@@ -1,10 +1,10 @@
 // import "dotenv/config";
-import dotenv from "dotenv";
+const dotenv = require("dotenv");
 dotenv.config();
-import express from "express";
-import morgan from "morgan";
-import {router} from "./router/route.js";
-import connectDB from "./db/conn.js";
+const express = require("express");
+const morgan = require("morgan");
+const {router} = require("./router/route.js");
+const connectDB = require("./db/conn.js");
 const app = express();
 
 const PORT = process.env.PORT || 8000;

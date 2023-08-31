@@ -10,4 +10,4 @@ const requestId = (idLen = 6) =>{
     return newStr
 }
 
-export { requestId };
+module.exports =  { requestId };

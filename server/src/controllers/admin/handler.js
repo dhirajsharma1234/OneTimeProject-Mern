@@ -1,5 +1,6 @@
 //collection
-import { DataModel } from "../../model/oneTime.js";
+// import { DataModel } from "../../model/oneTime.js";
+const { DataModel } =  require("../../model/oneTime.js");
 
 class OneTime {
     getAllUrlData = async(req,res) =>{
@@ -46,4 +47,4 @@ class OneTime {
 }
 
 const oneTime = new OneTime();
-export { oneTime };
+module.exports = { oneTime };

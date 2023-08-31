@@ -1,4 +1,4 @@
-import mongoose from "mongoose";
+const mongoose = require("mongoose");
 
 const dataSchema = new mongoose.Schema({
     urlId:{
@@ -42,4 +42,4 @@ const dataSchema = new mongoose.Schema({
 });
 
 const DataModel = new mongoose.model("oneTime",dataSchema);
-export {DataModel};
+module.exports =  {DataModel};

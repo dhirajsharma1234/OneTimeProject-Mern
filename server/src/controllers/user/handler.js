@@ -4,7 +4,7 @@ const { DataModel } = require("../../model/oneTime.js");
 const { requestId } = require("../../util/requestId.js");
 
 class OneTime {
-    createData = async(req,res) =>{
+     async createData(req,res){
         try {
             const { content } = req.body;
             const token = crypto.randomBytes(4).toString("hex");
@@ -28,7 +28,7 @@ class OneTime {
         }
     }
 
-    accessData = async(req,res) =>{
+    async accessData(req,res){
         try {
             const { token } = req.params;
 

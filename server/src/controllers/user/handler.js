@@ -1,7 +1,10 @@
-import crypto from "crypto";
+// import crypto from "crypto";
 //collection
-import { DataModel } from "../../model/oneTime.js";
-import { requestId } from "../../util/requestId.js";
+// import { DataModel } from "../../model/oneTime.js";
+// import { requestId } from "../../util/requestId.js";
+const crypto = require("crypto");
+const { DataModel } = require("../../model/oneTime.js");
+const { requestId } = require("../../util/requestId.js");
 
 class OneTime {
     createData = async(req,res) =>{

@@ -3,7 +3,7 @@
 const { DataModel } =  require("../../model/oneTime.js");
 
 class OneTime {
-    async getAllUrlData(req,res){
+     getAllUrlData = async (req,res) =>{
         try {
            // Get All url data
            const urlData = await DataModel.find({isDeleted: false});
@@ -14,7 +14,7 @@ class OneTime {
         }
     }
 
-    async getSingleUrlData(req,res){
+     getSingleUrlData = async (req,res) => {
         try {
             const { urlId } = req.params;
 
@@ -29,7 +29,7 @@ class OneTime {
         }
     }
 
-    async deleteUrlData(req,res) {
+     deleteUrlData = async(req,res) => {
         try {
             const { urlId } = req.params;
 
